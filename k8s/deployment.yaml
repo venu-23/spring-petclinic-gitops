@@ -15,6 +15,9 @@ spec:
       labels:
         app: spring-petclinic
     spec:
+      imagePullSecrets:
+      - name: ecr-secret
+
       containers:
       - name: spring-petclinic
         image: 538747156150.dkr.ecr.ap-south-2.amazonaws.com/spring-petclinic:31
